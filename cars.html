@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>ELECTRON | Electric Car</title>
+      <link rel="stylesheet" href="cars.css">
+      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+      <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+      <!-- LOGO -->
+      <link rel="icon" href="Img/favicon.ico">
+
+      <!-- FONTS -->
+      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200&display=swap" rel="stylesheet">
+
+      <!-- Animate.css  -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<body>
+      <div class="container">
+
+            <div class="left-col">
+
+                  <!-- MENU -->
+                  <div class="menu-wrap">
+                        <input type="checkbox" class="toggler">
+                        <div class="hamburger"><div></div></div>
+                        <div class="menu">
+                              <div>
+                                    <div>
+                                          <ul>
+                                                <li><a href="index.html" target="_blank">Landing Page</a></li>
+                                                <li><a href="main.html" target="_blank">Our Story</a></li>
+                                                <li><a href="cars.html" target="_blank">Cars</a></li>
+                                                <li><a href="newupdate.html" target="_blank">News Update</a></li>
+                                                <li><a href="tsa.html" target="_blank">TSA</a></li>
+                                                <li><a href="contact.html" target="_blank">Contacts</a></li>
+                                          </ul>
+                                    </div>
+                              </div>      
+                        </div>
+                  </div>
+
+
+                  <div class="logo">ELECTRON</div>
+
+                  <div class="year">EST 2017</div>
+
+                  <div class="data">
+
+                        <div class="album-name">
+                        <p id="name">ELECTRON</p>
+                        </div>
+
+                        <div class="album-artist">
+                        <p id="artist">HOVER ME!!</p>
+                        </div>
+
+                  </div>
+
+                  <div class="block-cover"></div>
+
+            </div>
+
+            <div class="right-col">
+
+            <a href="xy.html" target="_blank">
+                  <div class="upper">
+
+                        <div class="about">
+
+                              <h1>XY Series</h1>
+
+                        </div>
+
+                  </div>
+                  <div class="upper-block"></div>
+            </a>
+
+            <a href="electric.html" target="_blank"> 
+                  <div class="bottom">
+
+                        <div class="about">
+
+                              <h1 class="electrich1">ELECTRIC SERIES</h1>
+
+                        </div>
+
+                  </div>
+                  <div class="block-bottom"></div>
+            </a>
+
+            </div>
+
+      </div>
+      <script type="text/javascript">
+
+      TweenMax.from(".left-col", 2, {
+            width: "0%",
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".logo", 2, {
+            delay: 2.5,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".buy", 2, {
+            delay: 2.8,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".year", 2, {
+            delay: 3.1,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".album-name", 2, {
+            delay: 2.4,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".album-artist", 2, {
+            delay: 2.6,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".about h1", 2, {
+            delay: 3,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".album-name2", 2, {
+            delay: 3.2,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".album-artist2", 2, {
+            delay: 3.4,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".album-genre2", 2, {
+            delay: 3.6,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".media p", 2, {
+            delay: 3.6,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.staggerFrom(".media ul li", 2, {
+            delay: 3.8,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+      }, 0.1);
+
+
+      TweenMax.from(".album-name3", 2, {
+            delay: 4,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".album-artist3", 2, {
+            delay: 4.2,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".next", 2, {
+            delay: 4.4,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from(".more", 2, {
+            delay: 4.6,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+
+      </script>
+</body>
+</html>

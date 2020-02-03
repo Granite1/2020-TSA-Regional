@@ -1,0 +1,801 @@
+html, body {
+     margin: 0%;
+     padding: 0%;
+     width: 100%;
+     height: 100vh;
+     font-family: "Silk Serif" !important;
+     scroll-behavior: smooth;
+     background: white;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a.firstLink {
+  font-weight: lighter;
+  color: white;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+a.firstLink:hover {
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+}
+
+.jumbotron {
+        border-radius: 0 !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important; 
+}
+
+/* cursor */
+
+.wrap {
+     position: absolute;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     overflow: hidden !important;
+     z-index: 2;
+}
+
+#ball {
+     width: 60px;
+     height: 60px;
+     background: none;
+     border: 1px solid rgba(255, 255, 255, 0.2);
+     border-radius: 50%;
+     mix-blend-mode: exclusion;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     margin: -10px 0 0 -10px;
+     pointer-events: none;
+     z-index: 2;
+}
+
+/* loading screen */
+
+.loading-screen {
+     position: absolute;
+     margin: 0%;
+     padding: 0%;
+     width: 100%;
+     height: 100vh;
+     z-index: 2;
+     background: #0f0f0f;
+}
+
+.loading-screen .intro {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+}
+
+.loading-screen .intro h1 {
+     font-weight: 300;
+     color: #fff;
+}
+
+.intro-title .letter {
+     display: inline-block;
+     line-height: 1em;
+}
+
+/* backgrounds */
+
+.hero--left {
+     position: absolute;
+     height: 100vh;
+     background: url(Img/modelXFront.gif) no-repeat 50% 50%;
+     background-size: cover;    
+}
+
+.hero--middle {
+     background: #121212;
+}
+
+.hero--right {
+     position: absolute;
+     background: url(Img/falconwing.gif) no-repeat 50% 50%;
+     background-size: cover;
+}
+
+/* content */
+
+.logo {
+     position: absolute;
+     z-index: 1;
+     font-size: 11px;
+     color: rgba(255, 255, 255, 0.4);
+     line-height: 85px;
+     left: 21%;
+}
+
+.logo span {
+     color: #FFF;
+}
+
+.year {
+     position: absolute;
+     z-index: 1;
+     line-height: 85px;
+     right: 38.5%;
+     color: #fff;
+     font-size: 11px !important; 
+}
+
+.overlay-text {
+     position: absolute;
+     color: red;
+     z-index: 1;
+     font-size: 148px;
+     font-weight: 200;
+     transform: rotate(-18deg);
+     top: 26%;
+     left: 4%; 
+     mix-blend-mode: color;
+     opacity: 0;
+     animation: blinker 1s linear infinite;
+     animation-delay: 10s;
+
+}
+
+@keyframes blinker {   
+    
+     50% {
+       opacity: 1;
+     }
+
+}
+
+.hero-title {
+     position: absolute;
+     z-index: 1;
+     top: 66%;
+     left: 43%;
+     color: #fff;
+     font-weight: 200 !important;
+     font-size: 22px;
+     letter-spacing: 6px;
+     text-transform: uppercase;
+}
+
+.hero-text {
+     position: absolute;
+     z-index: 1;
+     top: 75%;
+     left: 43%;
+     color: #d9d9d9;
+     font-weight: lighter !important;
+     font-size: 8px;
+     font-family: Arial, Helvetica, sans-serif;
+     width: 20%;
+     text-transform: uppercase;
+}
+
+.hero-title .letter {
+     display: inline-block;
+}
+
+.bar {
+     position: absolute;
+     z-index: 1;
+     bottom: 7%;
+     left: 22%;
+     width: 165px;
+     height: .5pt;
+     background: rgba(255, 255, 255, 0.2);
+}
+
+.project {
+     position: absolute;
+     z-index: 4;
+     bottom: 6%;
+     right: 39.8%;
+     color: grey;
+     font-size: 12px; 
+}
+
+.project1 {
+     position: absolute;
+     z-index: 4;
+     bottom: 6%;
+     right: 43.5%;
+     color: grey;
+     font-size: 12px; 
+}
+
+.project2 {
+     position: absolute;
+     z-index: 4;
+     bottom: 6%;
+     right: 48.5%;
+     color: grey;
+     font-size: 12px; 
+}
+
+.project3 {     
+    position: absolute;
+     z-index: 4;
+     bottom: 6%;
+     right: 53.5%;
+     color: grey;
+     font-size: 12px; 
+}
+
+
+.media {
+     position: absolute;
+     z-index: 1;
+     bottom: 2%;
+     right: 2%;
+}
+
+.media ul {
+     list-style: none;
+}
+
+.media ul li {
+     display: inline-block;
+     color: #999999;
+     font-family: "Poppins";
+     font-size: 9px;
+     padding-right: 16px;
+}
+
+/* loading-screen*/
+
+.loading-screen {
+     position: absolute;
+     margin: 0%;
+     padding: 0%;
+     width: 100%;
+     height: 100vh;
+     z-index: 2;
+     background: #0f0f0f;
+}
+
+.loading-screen .intro {
+     position: absolute;
+     top: 48%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+}
+
+.loading-screen .intro h1 {
+     font-weight: 300;
+     color: #fff;
+
+}
+
+.intro-title .letter {
+     display: inline-block;
+     line-height: 1em;
+}
+
+
+
+
+/* Range  */
+.rangeJumbotron {
+      height: 100vh;
+      width: 100%;
+      background: url('Img/electricXRange.gif') no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.vertical-line {
+      border: solid 1px white;
+}
+
+.rangeMainText {
+      font-weight: bolder;
+      font-size: 40px;
+      text-align: center;
+      color: white;
+}
+
+.rangeDescriptionText {
+      font-size: 12px; 
+      text-align: center;
+      color: white;
+}
+
+.rangeInfos {
+      padding-top: 35%;
+      width: 90%;
+      padding-left: 10%;
+}
+
+#toInterior {
+      float: right;
+      padding-bottom: 5%;
+}
+
+a#toInterior {
+      color: white;
+      text-decoration: none;
+      transition: all 0.6s ease-in-out;
+      text-align: center;
+      animation: ColorChangeWhitetoYellow 2s infinite;
+}
+
+a#toInterior:hover {
+      text-align: center;
+      color: white;
+      font-size: 20px;
+}
+
+@-webkit-keyframes ColorChangeWhitetoYellow {
+      0% {
+            color: white;
+      }
+
+      50% {
+            color: #f1c40f;
+      }
+
+      100%{
+            color: white;
+      }
+}
+
+@-webkit-keyframes ColorChangeBlacktoYellow {
+      0% {
+            color: black;
+      }
+
+      50% {
+            color: #f1c40f;
+      }
+
+      100%{
+            color: black;
+      }
+}
+
+
+
+
+
+/* INTERIOR  */
+.interiorJumbotron {
+      height: 100vh;
+      width: 100%;
+      background: url('Img/modelXInterior.gif') no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.interiorHeader {
+      padding-top: 20%;
+      font-weight: bolder;
+      font-size: 60px;
+      text-align: center;
+      padding-left: 5%;
+}
+
+.interiorSideHeader {
+      font-size: 20px; 
+      text-align: center;
+      font-weight: lighter
+}
+
+.interiorInfo {
+  text-align: center;
+  width: 80%;
+  padding-left: 20%;
+}
+
+.interiorInfoHeader {
+      padding-top: 10%;
+      font-size: 15px;
+      font-weight: bolder;
+}
+
+.interiorInfoSide {
+      padding-top: 2%;
+      font-weight: lighter;
+}
+
+.lastOne {
+      padding-bottom: 5%;
+}
+
+.toGallery a {
+      color: black;
+      text-decoration: none;
+      animation: ColorChangeBlacktoYellow 2s infinite;
+      transition: all 0.5s ease-in-out;
+}
+
+.toGallery a:hover {
+      color: black;
+      text-decoration: none;
+      font-weight: bolder;
+}
+
+
+/* Gallery  */
+#gallery {
+      padding-top: 10%;
+}
+
+.gallery-container {
+      width: 100%;
+      max-width: 120rem;
+      margin: auto;
+      padding: 0 1.5rem;
+}
+
+.image-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-gap: 1.5rem;
+      grid-template-areas:
+            'img-1 img-2 img-3 img-3'
+            'img-6 img-6 img-5 img-4'
+            'img-7 img-7 img-8 img-8';
+}
+
+.image-gallery a {
+      width: 100%;
+      height: 25rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+}
+
+.image-gallery a .icons{
+      color: rgba(255,255,255, .6);
+      font-size: 3rem;
+      position: relative;
+      z-index: 100;
+      padding: 1rem 3rem;
+      border: 2px solid rgba(255,255,255, .6);
+      border-radius: .4rem;
+      opacity: 0;  
+      transition: opacity .5s;
+}
+
+.image-gallery a::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0,0,0,0.8);
+      opacity: 0; 
+      transition: opacity .5s;
+}
+
+.image-gallery a:hover .icons,
+.image-gallery a:hover::before {
+      opacity: 1;
+}
+
+.xyImg1 {
+      grid-area: img-1;
+      background-image: url(electric/electric-1.png);
+}
+
+.xyImg2 {
+      grid-area: img-2;
+      background-image: url(electric/electric-2.jpg);
+}
+
+.xyImg3 {
+      grid-area: img-3;
+      background-image: url(electric/electric-3.jpg);
+}
+
+.xyImg4 {
+      grid-area: img-4;
+      background-image: url(electric/electric-4.jpg);
+}
+
+.xyImg5 {
+      grid-area: img-5;
+      background-image: url(electric/electric-5.jpg);
+}
+
+.xyImg6 {
+      grid-area: img-6;
+      background-image: url(electric/electric-6.png);
+}
+
+.xyImg7 {
+      grid-area: img-7;
+      background-image: url(electric/electric-7.jpg);
+}
+
+.xyImg8 {
+      grid-area: img-8;
+      background-image: url(electric/electric-8.jpg);
+}
+
+.learnMoreInterior{
+      text-align: center;
+}
+
+.learnMoreInterior a{
+      text-decoration: none;
+      color: black;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+      animation: ColorChangeBlacktoYellow 2s infinite;
+}
+
+.learnMoreInterior a:hover {
+      text-decoration: none;
+}
+
+
+/* SPECS */
+#specs {
+      margin-top: 5%;
+}
+
+.specsPic {
+      background: url(Img/modelXCar.jpg) no-repeat 50% 50%;
+}
+
+.jumbotron {
+      border-radius: 0 !important;
+
+}
+
+.completeSpecs {
+      background: yellow;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+}
+
+.specsHeader {
+      color: white;
+      font-size: 30px;
+}
+
+.specsList {
+      padding-top: 10%;
+      color: white;
+      font-weight: lighter;
+      font-size: 15px;
+}
+
+.bold {
+      font-weight: bolder;
+}
+
+.lighter {
+      font-weight: lighter;
+
+}
+
+@media(max-width: 1800px) {
+      .completeSpecs {
+            height: 100%;
+      }
+}
+
+
+@media(max-width: 1090px) {
+      .specsPic {
+            background: url(Img/reponsiveModelX.jpg) no-repeat 50% 50%;
+      }
+}
+
+
+
+
+@media (max-width: 900px) {
+      .hero-text {
+            display: none;
+      }
+
+      .completeSpecs {
+            background: yellow;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+      }
+
+      .specsList {
+            text-align: center;
+      }
+
+      .specsHeader {
+            text-align: center;
+      }
+
+
+       /* Gallery */
+      .image-gallery {
+            grid-template-areas:
+            'img-1 img-1 img-2 img-2'
+            'img-3 img-3 img-3 img-3'
+            'img-4 img-4 img-5 img-5'
+            'img-6 img-7 img-7 img-7'
+            'img-8 img-8 img-8 img-8';
+      }
+
+
+      .project-preview {
+      position: fixed;
+      top: 12%;
+      left: 0%;
+      width: 0px;
+      height: 400px;
+      background: url(img-1.jpg) no-repeat 50% 50%;
+      background-size: cover;
+      overflow: hidden;
+      }
+
+
+  a {
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+/* responsivenes PHONE */
+
+@media(max-width: 678px) {
+        .specPIC {
+            display: none;
+      }
+
+      .toGallery a {
+            color: black;
+            text-decoration: none;
+            animation: ColorChangeBlacktoYellow 2s infinite;
+            transition: all 0.5s ease-in-out;
+      }
+      
+      .interiorHeader {
+            padding-top: 40%;
+            font-weight: bolder;
+            font-size: 60px;
+            text-align: center;
+            padding-left: 3%;
+      }
+
+      .project3 {     
+            position: absolute;
+            z-index: 4;
+            bottom: 6%;
+            right: 30%;
+            color: grey;
+            font-size: 12px; 
+      }
+
+      .lastOne {
+            padding-bottom: 20%;
+      }
+
+      a#toInterior {
+        padding-left: 38%;
+        float: none;
+        padding-top: 40%;
+      }
+
+     .hero--left {
+          background: url(Img/regularmodelx.gif) no-repeat 50% 50%;
+          background-size: cover;
+     }
+
+     .hero--middle, .hero--right {
+          display: none;
+     }
+
+     .wrap {
+          display: none;
+     }
+
+     .logo {
+          left: 0%;
+          margin-left: 24px; 
+     }
+
+     .year {
+          right: 0%;
+          margin-right: 24px;
+     }
+
+     .hero-title {
+          position: absolute;
+          top: 75%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          letter-spacing: 0px;
+          font-size: 16px;
+     }
+
+     .overlay-text {
+          display: none;
+     }
+
+     .bar {
+          display: none;
+     }
+
+     .project {
+          display: none;
+     }
+}
+
+@media(max-width: 1080px) {
+      .interiorHeader {
+          padding-top: 10%;
+          font-weight: bolder;
+          font-size: 30px;
+          text-align: center;
+          padding-left: 5%;
+    }
+
+    .project {
+      right: 21%;
+     }
+
+    .project1 {
+      right: 30%;
+    }
+
+    .project2 {
+      right: 40%;
+    }
+
+    .project3 {     
+      right: 50%;
+    }
+}
+
+/* TABLET */
+@media(max-width: 798px) {
+
+    .vertical-line {
+      display: none;
+    }
+
+    .intro h1 {
+          font-size: 24px;
+     }
+
+    .project {
+       display: none;
+     }
+
+    .project1 {
+        display: none;
+      }
+
+    .project2 {
+        display: none;
+      }
+
+    .project3 {     
+        right: 45%;
+    }
+}
+
+
+
